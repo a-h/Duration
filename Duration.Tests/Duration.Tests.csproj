@@ -39,9 +39,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DurationTimer\DurationTimer.csproj">
+    <ProjectReference Include="..\Duration\Duration.csproj">
       <Project>{ECD5D517-37A8-4A4B-AFB1-A4417D72F7BE}</Project>
-      <Name>DurationTimer</Name>
+      <Name>Duration</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

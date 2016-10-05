@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace DurationTimer
+namespace Duration
 {
-	public class TimeLogger : IDisposable
+	public class DurationLogger : IDisposable
 	{
 		Stopwatch stopWatch = new Stopwatch();
 
 		public Action<string> Logger { get; set; }
 		public string MetricName { get; set; }
 
-		public TimeLogger(Action<string> logger, string metricName)
+		public DurationLogger(Action<string> logger, string metricName)
 		{
 			this.Logger = logger;
 			this.MetricName = metricName;

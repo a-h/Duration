@@ -1,9 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationTimer", "DurationTimer\DurationTimer.csproj", "{ECD5D517-37A8-4A4B-AFB1-A4417D72F7BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duration", "Duration\Duration.csproj", "{ECD5D517-37A8-4A4B-AFB1-A4417D72F7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationTimer.Tests", "DurationTimer.Tests\DurationTimer.Tests.csproj", "{E7A01EA1-60EF-48D0-986F-4D064C9862EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duration.Tests", "Duration.Tests\Duration.Tests.csproj", "{E7A01EA1-60EF-48D0-986F-4D064C9862EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
