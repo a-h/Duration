@@ -10,8 +10,10 @@ using (new DurationLogger((msg) => _logger.Debug(msg), "code_section.login"))
 }
 ```
 
-The function passed to the logger will log:
+The argument passed to logging lambda expression will be:
 
 ```
 code_section.login=5ms
 ```
+
+One way to use this is to pass a function that logs to a log4net logger.
