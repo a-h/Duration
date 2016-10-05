@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Duration/Duration.csproj</id>
+    <id>Duration</id>
     <version>1.0.0</version>
     <authors>http://github.com/a-hi</authors>
     <owners>adrian</owners>
@@ -15,4 +15,7 @@
     <dependencies>
     </dependencies>
   </metadata>
+  <files>
+    <file src="Duration\bin\release\Duration.dll" target="lib" />
+  </files>
 </package>

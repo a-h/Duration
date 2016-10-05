@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E7A01EA1-60EF-48D0-986F-4D064C9862EF}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>DurationTimer.Tests</RootNamespace>
-    <AssemblyName>DurationTimer.Tests</AssemblyName>
+    <RootNamespace>Duration.Tests</RootNamespace>
+    <AssemblyName>Duration.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
