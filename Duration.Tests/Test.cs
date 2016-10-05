@@ -20,7 +20,7 @@ namespace Duration.Tests
 				Thread.Sleep(5);
 			}
 
-			Assert.IsTrue(HasExpectedLogEntry(capturedMessage, "logentry", 5, 10));
+			Assert.IsTrue(HasExpectedLogEntry(capturedMessage, "logentry", 5, 10), $"Expected a sleep between 5 and 10ms, but got '{capturedMessage}'");
 		}
 
 		[Test]
