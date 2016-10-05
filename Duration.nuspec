@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Duration/Duration.csproj</id>
+    <version>1.0.0</version>
+    <authors>http://github.com/a-hi</authors>
+    <owners>adrian</owners>
+    <licenseUrl>http://github.com/a-h/Duration/license.txt</licenseUrl>
+    <projectUrl>http://github.com/a-h/Duration</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tracks execution time of code within a using statement.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>c#</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>
