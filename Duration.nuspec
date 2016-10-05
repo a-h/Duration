@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Duration\bin\release\Duration.dll" target="lib" />
+    <file src="Duration/bin/Release/Duration.dll" target="lib" />
   </files>
 </package>
