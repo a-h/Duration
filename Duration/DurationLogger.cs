@@ -21,8 +21,7 @@ namespace Duration
 		public void Dispose()
 		{
 			stopWatch.Stop();
-			this.Logger($"{this.MetricName}={stopWatch.ElapsedMilliseconds}ms");
+			this.Logger($"{this.MetricName} {stopWatch.ElapsedMilliseconds}");
 		}
 	}
 }
-

@@ -26,23 +26,23 @@ namespace Duration.Tests
 		[Test]
 		public void TestExpectations()
 		{
-			Assert.IsTrue(HasExpectedLogEntry("a=1ms", "a", 1, 1), "1ms is in the range of 1-1");
-			Assert.IsFalse(HasExpectedLogEntry("a=0ms", "a", 1, 1), "0ms is not in the range of 1-1");
-			Assert.IsTrue(HasExpectedLogEntry("a=10ms", "a", 5, 11), "10ms is in the range of 5-11");
-			Assert.IsFalse(HasExpectedLogEntry("a=12ms", "a", 5, 11), "12ms is not in the range of 5-11");
-			Assert.IsFalse(HasExpectedLogEntry("a=12ms", "b", 5, 12), "Expected to that 'b' would not match 'a' was not expected.");
+			Assert.IsTrue(HasExpectedLogEntry("a 1", "a", 1, 1), "1ms is in the range of 1-1");
+			Assert.IsFalse(HasExpectedLogEntry("a 0", "a", 1, 1), "0ms is not in the range of 1-1");
+			Assert.IsTrue(HasExpectedLogEntry("a 10", "a", 5, 11), "10ms is in the range of 5-11");
+			Assert.IsFalse(HasExpectedLogEntry("a 12", "a", 5, 11), "12ms is not in the range of 5-11");
+			Assert.IsFalse(HasExpectedLogEntry("a 12", "b", 5, 12), "Expected to that 'b' would not match 'a' was not expected.");
 		}
 
 		private bool HasExpectedLogEntry(string entry, string expectedName, int min, int max)
 		{
-			var actualName = entry.Split('=').First();
+			var actualName = entry.Split(' ').First();
 
 			if (actualName != expectedName)
 			{
 				return false;
 			}
 
-			var ms = int.Parse(entry.Split('=').Last().TrimEnd("ms".ToCharArray()));
+			var ms = int.Parse(entry.Split(' ').Last());
 
 			return ms >= min && ms <= max;
 		}
