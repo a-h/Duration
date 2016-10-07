@@ -35,14 +35,14 @@ namespace Duration.Tests
 
 		private bool HasExpectedLogEntry(string entry, string expectedName, int min, int max)
 		{
-			var actualName = entry.Split('=').First();
+			var actualName = entry.Split(' ').First();
 
 			if (actualName != expectedName)
 			{
 				return false;
 			}
 
-			var ms = int.Parse(entry.Split('=').Last().TrimEnd("ms".ToCharArray()));
+			var ms = int.Parse(entry.Split(' ').Last());
 
 			return ms >= min && ms <= max;
 		}
